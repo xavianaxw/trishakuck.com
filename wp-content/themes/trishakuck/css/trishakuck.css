@@ -1,0 +1,183 @@
+/*-----------------------------------------------------------------------------------
+
+	File Name: trishakuck.css
+	Author: Xavian Ang (xavianang@openmindsresources.com)
+	Description: For additional styling to overwrite original style.css
+
+-----------------------------------------------------------------------------------*/
+
+/***************************************
+*	Colors 
+*	52e6d8 - Main Turquoise
+*	
+****************************************/
+
+.color-52e6d8 { color:#52e6d8 !important; }
+
+.archive .post .morecontent a:hover, .single-post .post .content a:hover { color:#111 !important; }
+
+p { font-size:14px; }
+
+body { -webkit-font-smoothing: antialiased; }
+
+body:not(.home) { padding-top:85px; }
+body.mobile-device { padding-top:136px; }
+
+.mobile-device #logo { margin-bottom:0; }
+.mobile-device #logo img { margin:0 auto; }
+
+#sticky-footer-push { height:30px !important; }
+
+.navbar-fixed-top {
+	position:fixed;
+	top:0; left:0; right:0;
+	z-index:10000;
+	transition:background-color linear 0.15s, border-bottom linear 0.15s;
+	-webkit-transition:background-color linear 0.15s, border-bottom linear 0.15s;
+	-moz-transition:background-color linear 0.15s, border-bottom linear 0.15s;
+	-o-transition:background-color linear 0.15s, border-bottom linear 0.15s;
+}
+.admin-bar .navbar-fixed-top { top:32px; }
+
+.navbar-fixed-top.bg-enabled { background-color:#fff; border-bottom:5px solid #52e6d8; }
+
+.sitecontainer .container.top-nav { 
+	padding:0;
+}
+
+.mobile-device .sitecontainer .container.top-nav { padding-bottom:10px; }
+
+.fullwidthbanner-container { min-height:500px; border-bottom:5px solid #52e6d8; }
+
+.sf-menu a { font-family:'Century Gothic', 'Quicksand', arial, sans-serif; letter-spacing:2px; }
+
+.navbar-fixed-top:not(.bg-enabled) .sf-menu a,
+.sf-menu .sub-menu a { color:rgb(255,255,255) !important; }
+.navbar-fixed-top:not(.bg-enabled) .sf-menu a:hover,
+.sf-menu .sub-menu a:hover { color:rgba(255,255,255,0.5) !important; }
+
+.sf-arrows .sf-with-ul:after { border-top-color:rgba(81,81,81,1); }
+.sf-arrows > li > .sf-with-ul:focus:after, 
+.sf-arrows > li:hover > .sf-with-ul:after, 
+.sf-arrows > .sfHover > .sf-with-ul:after { border-top-color:#000 !important; }
+
+.navbar-fixed-top:not(.bg-enabled) .sf-arrows .sf-with-ul:after { border-top-color:rgba(255,255,255,1); }
+.navbar-fixed-top:not(.bg-enabled) .sf-arrows > li > .sf-with-ul:focus:after, 
+.navbar-fixed-top:not(.bg-enabled) .sf-arrows > li:hover > .sf-with-ul:after, 
+.navbar-fixed-top:not(.bg-enabled) .sf-arrows > .sfHover > .sf-with-ul:after { border-top-color:rgba(255,255,255,0.5) !important; }
+
+.filtercontainer { height:24px; }
+.home .filtercontainer { margin-top:20px; }
+.filtercontainer .filter {
+	width:auto !important;
+	position:absolute;
+	top:0; left:50%;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+}
+
+ul.filter li { margin-bottom:0; }
+ul.filter li a { color:#fff; }
+ul.filter li a.active,
+ul.filter li a:hover { background-color:#fff; color:#52e6d8; }
+
+.section-title { 
+	font-family:'Century Gothic', 'Quicksand', arial, sans-serif; 
+	text-transform:uppercase;
+	letter-spacing:3px;
+	color:#fff;
+	text-align: center;
+	margin:0;
+}
+
+.widget-title { font-family:'Century Gothic', 'Quicksand', arial, sans-serif !important; letter-spacing:2px !important; }
+
+.isocontainer a.thumblink:after {
+	transition:background-color 0.3s;
+	-webkit-transition:background-color 0.3s;
+	-moz-transition:background-color 0.3s;
+	-o-transition:background-color 0.3s;
+}
+.isocontainer a.thumblink:hover:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.5);
+	transition:background-color 0.3s;
+	-webkit-transition:background-color 0.3s;
+	-moz-transition:background-color 0.3s;
+	-o-transition:background-color 0.3s;
+}
+.isocontainer a.thumblink { position:relative; }
+.isocontainer a.thumblink h2.title {
+	position:absolute;
+	top:50%; left:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	opacity:0;
+	transition:opacity 0.3s;
+	-webkit-transition:opacity 0.3s;
+	-moz-transition:opacity 0.3s;
+	-o-transition:opacity 0.3s;
+	color:#fff;
+	font-family:'Century Gothic', 'Quicksand', arial, sans-serif;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	z-index:11;
+}
+.isocontainer a.thumblink:hover h2.title { opacity:1; }
+
+.pagetitle { padding:20px 0; }
+.pagetitle h1, .homecaption h2, .section h2, #logo h1 a, #logo h2 a {
+	font-family:'Century Gothic', 'Quicksand', arial, sans-serif !important;
+	text-transform:uppercase !important;
+	letter-spacing:2px !important;
+}
+
+.page-id-21 .section h2 { font-size:30px; }
+
+.pagetitle h1 { color:#52e6d8; }
+
+.section h3 { font-weight:normal; }
+.section.custom { padding-bottom:30px; }
+
+.archive .isobrick { background-color:#fff; }
+.archive .isobrick .wrapper { padding:15px 15px 10px; }
+.archive .isobrick .wrapper .title { display:block; text-align:center; font-size:20px !important; line-height:24px !important; }
+.archive .post .featured-image { margin-bottom:0 !important; }
+
+.post .featured-image { position:relative; }
+.post .featured-image img { width:100%; }
+.post { margin-bottom:0; padding-bottom:5px; }
+.post .date {
+	width:65px;
+	float:none;
+	position:absolute;
+	margin:0;
+	z-index:1000;
+}
+.archive .post .date { bottom:10px; left:10px; }
+.single .post .date { bottom:45px; left:15px; }
+.post .date .day { margin:0; background-color:#52e6d8; }
+.post .date .day span { color:#fff; }
+
+.post #media { position:relative; }
+
+.single .pagecontent { background-color:#fff; }
+
+.categories { margin-bottom:5px !important; }
+.categories a { font-size:16px; line-height:13px; }
+.categories > span { float:left; font-size:16px; margin-right:5px; }
+
+.post .single-content.full { width:100%; }
+
+ol, ul.square, ul.circle, ul.disc { margin-left:15px !important; }
